@@ -1979,8 +1979,9 @@ terser@^5.3.8:
     source-map "~0.7.2"
     source-map-support "~0.5.19"
 
-"test-one@file:../test-one":
+"test-one@git://github.com/helloitsjoe/test-lib-one.git#main":
   version "1.0.0"
+  resolved "git://github.com/helloitsjoe/test-lib-one.git#ca0abbd5894aeeedb3c92a9a5e3defd5b13ebaf0"
   dependencies:
     styled-components "5.0.0"
 
