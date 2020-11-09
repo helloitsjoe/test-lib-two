@@ -1981,7 +1981,7 @@ terser@^5.3.8:
 
 "test-one@git://github.com/helloitsjoe/test-lib-one.git#main":
   version "1.0.0"
-  resolved "git://github.com/helloitsjoe/test-lib-one.git#8c30f2d3e6d5202957282ee2b98a02160ff8f1d0"
+  resolved "git://github.com/helloitsjoe/test-lib-one.git#24ac5556c8534fdb2c57c41d6f47fdb706293b99"
   dependencies:
     styled-components "5.0.0"
 
