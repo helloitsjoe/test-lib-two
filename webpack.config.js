@@ -1,9 +1,11 @@
 const { makeWebpackConfig } = require('webpack-simple');
 
-module.exports = makeWebpackConfig({
-  output: {
-    library: 'test-two',
-    libraryTarget: 'umd',
-  },
-  externals: 'react',
-});
+const config = makeWebpackConfig();
+
+config.output = {
+  library: 'test-two',
+  libraryTarget: 'amd',
+};
+config.externals = 'react';
+
+module.exports = config;

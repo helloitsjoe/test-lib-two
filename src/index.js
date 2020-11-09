@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+console.log(`styled:`, styled);
 import { HomebaseButton } from 'test-one';
 console.log(`HomebaseButton:`, HomebaseButton);
 

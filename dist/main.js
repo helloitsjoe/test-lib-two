@@ -6,17 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
-	else if(typeof exports === 'object')
-		exports["test-two"] = factory(require("react"));
-	else
-		root["test-two"] = factory(root["react"]);
-})(self, function(__WEBPACK_EXTERNAL_MODULE_react__) {
-return /******/ (() => { // webpackBootstrap
+define("test-two", ["react"], (__WEBPACK_EXTERNAL_MODULE_react__) => /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js":
@@ -90,7 +80,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"NavButton\": () => /* binding */ NavButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var test_one__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! test-one */ \"./node_modules/test-one/dist/main.js\");\n/* harmony import */ var test_one__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(test_one__WEBPACK_IMPORTED_MODULE_1__);\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  color: tomato;\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\n\nconsole.log(\"HomebaseButton:\", test_one__WEBPACK_IMPORTED_MODULE_1__.HomebaseButton);\nvar Div = styled_components__WEBPACK_IMPORTED_MODULE_2__.default.div(_templateObject()); // export const NavButton = () => <Button>NAV</Button>;\n\nvar NavButton = function NavButton() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(test_one__WEBPACK_IMPORTED_MODULE_1__.HomebaseButton, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Div, null, \"NAV\"));\n};\n\n//# sourceURL=webpack://test-two/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"NavButton\": () => /* binding */ NavButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var test_one__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! test-one */ \"./node_modules/test-one/dist/main.js\");\n/* harmony import */ var test_one__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(test_one__WEBPACK_IMPORTED_MODULE_2__);\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  color: tomato;\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\nconsole.log(\"styled:\", styled_components__WEBPACK_IMPORTED_MODULE_1__.default);\n\nconsole.log(\"HomebaseButton:\", test_one__WEBPACK_IMPORTED_MODULE_2__.HomebaseButton);\nvar Div = styled_components__WEBPACK_IMPORTED_MODULE_1__.default.div(_templateObject()); // export const NavButton = () => <Button>NAV</Button>;\n\nvar NavButton = function NavButton() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(test_one__WEBPACK_IMPORTED_MODULE_2__.HomebaseButton, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Div, null, \"NAV\"));\n};\n\n//# sourceURL=webpack://test-two/./src/index.js?");
 
 /***/ }),
 
@@ -336,5 +326,4 @@ eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpa
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__("./src/index.js");
 /******/ })()
-;
-});
+);;
