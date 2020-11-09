@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-console.log(`styled:`, styled);
+console.log(`test-two styled:`, styled);
 import { HomebaseButton } from 'test-one';
-console.log(`HomebaseButton:`, HomebaseButton);
+console.log(`test-two HomebaseButton:`, HomebaseButton);
 
 const Div = styled.div`
   color: tomato;
