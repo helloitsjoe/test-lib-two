@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HomebaseButton } from 'test-one';
 
-// const Button = styled.button`
-//   background: none;
-//   border: none;
-//   border-radius: 4px;
-//   padding: 10px;
-//   background-color: cornflowerblue;
-//   color: white;
-// `;
+const Div = styled.div`
+  color: tomato;
+`;
 
 // export const NavButton = () => <Button>NAV</Button>;
-export const NavButton = () => <button>NAV</button>;
+export const NavButton = () => (
+  <HomebaseButton>
+    <Div>NAV</Div>
+  </HomebaseButton>
+);

@@ -8,43 +8,26 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define([], factory);
 	else if(typeof exports === 'object')
-		exports["test-two"] = factory(require("react"));
+		exports["test-two"] = factory();
 	else
-		root["test-two"] = factory(root["react"]);
-})(self, function(__WEBPACK_EXTERNAL_MODULE_react__) {
+		root["test-two"] = factory();
+})(self, function() {
 return /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! namespace exports */
-/*! export NavButton [provided] [maybe used in main (runtime-defined)] [usage prevents renaming] */
-/*! other exports [not provided] [maybe used in main (runtime-defined)] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"NavButton\": () => /* binding */ NavButton\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n // const Button = styled.button`\n//   background: none;\n//   border: none;\n//   border-radius: 4px;\n//   padding: 10px;\n//   background-color: cornflowerblue;\n//   color: white;\n// `;\n// export const NavButton = () => <Button>NAV</Button>;\n\nvar NavButton = function NavButton() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", null, \"NAV\");\n};\n\n//# sourceURL=webpack://test-two/./src/index.js?");
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/*! dynamic exports */
-/*! export __esModule [maybe provided (runtime-defined)] [no usage info] [provision prevents renaming (no use info)] */
-/*! other exports [maybe provided (runtime-defined)] [no usage info] */
-/*! runtime requirements: module */
-/***/ ((module) => {
-
-eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpack://test-two/external_%22react%22?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: /Users/joe/PROJECTS/test-deps/test-two/src/index.js: Identifier 'NavButton' has already been declared (10:13)\\n\\n\\u001b[0m \\u001b[90m  8 | \\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m  9 | \\u001b[39m\\u001b[36mexport\\u001b[39m \\u001b[36mconst\\u001b[39m \\u001b[33mNavButton\\u001b[39m \\u001b[33m=\\u001b[39m () \\u001b[33m=>\\u001b[39m \\u001b[33m<\\u001b[39m\\u001b[33mButton\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[33mNAV\\u001b[39m\\u001b[33m<\\u001b[39m\\u001b[33m/\\u001b[39m\\u001b[33mButton\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 10 | \\u001b[39m\\u001b[36mexport\\u001b[39m \\u001b[36mconst\\u001b[39m \\u001b[33mNavButton\\u001b[39m \\u001b[33m=\\u001b[39m () \\u001b[33m=>\\u001b[39m (\\u001b[0m\\n\\u001b[0m \\u001b[90m    | \\u001b[39m             \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 11 | \\u001b[39m  \\u001b[33m<\\u001b[39m\\u001b[33mHomebaseButton\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 12 | \\u001b[39m    \\u001b[33m<\\u001b[39m\\u001b[33mDiv\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[33mNAV\\u001b[39m\\u001b[33m<\\u001b[39m\\u001b[33m/\\u001b[39m\\u001b[33mDiv\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 13 | \\u001b[39m  \\u001b[33m<\\u001b[39m\\u001b[33m/\\u001b[39m\\u001b[33mHomebaseButton\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[0m\\n    at Object._raise (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:799:17)\\n    at Object.raiseWithData (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:792:17)\\n    at Object.raise (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:786:17)\\n    at ScopeHandler.checkRedeclarationInScope (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:4906:12)\\n    at ScopeHandler.declareName (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:4872:12)\\n    at Object.checkLVal (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:9554:22)\\n    at Object.parseVarId (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:12265:10)\\n    at Object.parseVar (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:12240:12)\\n    at Object.parseVarStatement (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:12052:10)\\n    at Object.parseStatementContent (/Users/joe/PROJECTS/test-deps/test-two/node_modules/@babel/parser/lib/index.js:11644:21)\");\n\n//# sourceURL=webpack://test-two/./src/index.js?");
 
 /***/ })
 
@@ -72,47 +55,6 @@ eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpa
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
